@@ -33,8 +33,8 @@ public class T2_DriverUtil_Practice {
         Driver.getDriver().get(ConfigurationReader.getProperty("bingURL"));
 
         //3- Write “apple” in search box
-        WebElement cookies =  Driver.getDriver().findElement(By.xpath("//button[@id='bnp_btn_accept']"));
-        cookies.click();
+       WebElement cookies =  Driver.getDriver().findElement(By.xpath("//button[@id='bnp_btn_accept']"));
+       cookies.click();
         //locate the search box
         WebElement searchBox = Driver.getDriver().findElement(By.xpath("//textarea[@name='q']"));
         searchBox.sendKeys(ConfigurationReader.getProperty("searchValue") + Keys.ENTER);
@@ -64,7 +64,7 @@ public class T2_DriverUtil_Practice {
 
         //3- Write “apple” in search box
           WebElement cookies =  Driver.getDriver().findElement(By.xpath("//button[@id='bnp_btn_accept']"));
-          cookies.click();
+         cookies.click();
         //locate the search box
         WebElement searchBox = Driver.getDriver().findElement(By.xpath("//textarea[@name='q']"));
         searchBox.sendKeys(ConfigurationReader.getProperty("searchValue") + Keys.ENTER);
