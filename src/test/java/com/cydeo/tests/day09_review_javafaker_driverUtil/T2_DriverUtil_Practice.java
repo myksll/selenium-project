@@ -93,7 +93,7 @@ public class T2_DriverUtil_Practice {
         We will use Driver.closeDriver();
          */
 
-     //Driver.closeDriver();
+     Driver.closeDriver();
 
  }
 }
