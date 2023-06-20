@@ -28,7 +28,7 @@ public class HardVsSoft_Assertion {
 
 
     @Test
-    public void login_test_with_hard_assertion(){
+    public void login_test_with_hard_assertion() throws InterruptedException {
 
         // 3. Enter username: "tomsmith"
         // 4. Enter password: "SuperSecretPassword"
@@ -47,6 +47,8 @@ public class HardVsSoft_Assertion {
 
         Assert.assertTrue(driver.getTitle().contains("Secure Area"));//  if there is an exception or fail , it will not execute until this line
 
+
+        Thread.sleep(1000);
       //  WebElement resultText1 = driver.findElement(By.cssSelector(".flash.success"));
         WebElement resultText1 = driver.findElement(By.xpath("//div[normalize-space(text())='You logged into a secure area!']"));
 
@@ -85,12 +87,7 @@ public class HardVsSoft_Assertion {
 
       softAssert.assertTrue(actualText.contains(expectedText));
 
-     // softAssert.assertAll();//like try-catch. if there is an exception or fail , it will still execute
+      //we have to use assertAll() method at the end of Test method execute all assertions
+      softAssert.assertAll();//like try-catch. if there is an exception or fail , it will still execute
     }
-
-
-
-
-
-
 }
