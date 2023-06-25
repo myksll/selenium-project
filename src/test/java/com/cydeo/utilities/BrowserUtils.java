@@ -65,15 +65,19 @@ public class BrowserUtils {
 
     }
 
+
     @Test
     public static void  verifyTitleContains(WebDriver driver, String expectedInTitle){
 
         String actualTitle= driver.getTitle();
         Assert.assertTrue(actualTitle.contains(expectedInTitle));
-
     }
 
 
+    /*
+       This method accepts WebElement target,
+       and waits for that WebElement not to be displayed on the page
+        */
     public static void waitForInvisibilityOf(WebElement target){
         //Create the object of 'WebDriverWait' class, and set up the constructor args
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
