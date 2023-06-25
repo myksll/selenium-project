@@ -15,7 +15,7 @@ public abstract class BaseTest {
 
     @AfterMethod
     public void teardown(){
-        Driver.closeDriver();
+       // Driver.closeDriver();
 
         //You can also implement taking screenshot method here to take a screenshot after each test
     }
