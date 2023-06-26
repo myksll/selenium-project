@@ -1,7 +1,7 @@
 package com.cydeo.utilities;
 
 
-//In this class , we will be creating the re-usable logic to read from configuration.properties file
+//In this class , we will be creating the re-usable logic to read from configuration.properties file and prevent hard coding of test data
 
 import java.io.FileInputStream;
 import java.io.IOException;

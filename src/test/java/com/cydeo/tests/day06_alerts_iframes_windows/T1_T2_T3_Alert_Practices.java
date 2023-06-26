@@ -28,7 +28,7 @@ public class T1_T2_T3_Alert_Practices {
 
     @AfterMethod
     public void tearDownMethod(){
-        driver.quit();
+       driver.quit();
     }
 
     @Test
